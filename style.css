@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
-/*	    FET
+/*	    OOLY mattress
 /*      Built with Blocs
 /*-----------------------------------------------------------------------------------*/
 
@@ -19,11 +19,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
    
 
 
-
-
 /* Globals type styling */
-   
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -56,6 +53,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Sizes */
 
+.bloc-xxl{
+	padding:200px 50px;
+}
 .bloc-lg{
 	padding:100px 50px;
 }
@@ -74,6 +74,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	-moz-background-size: auto!important;
 	-o-background-size: auto!important;
 	background-size: auto!important;
+}
+.bg-center{
+	-webkit-background-size: auto;
 }
 .bg-repeat{
 	background:repeat;
@@ -191,56 +194,17 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Row Margin Offsets */
 
-.voffset{
-	margin-top:30px;
+.voffset-lg{
+	margin-top:80px;
 }
 
 /* Bloc text custom styling */
 
-#hero-bloc h1{
-	font-size:50px;
+#bloc-1 h1{
+	font-size: 42px;
 }
-#hero-bloc h3{
-	font-size: 28px;
-}
-#bloc-2 h3{
-	font-size: 30px;
-	font-family: 'Open Sans Condensed';
-	font-weight: 300;
-}
-#bloc-3 h3{
-	font-family: Lato;
-	font-weight: 300;
-}
-#bloc-4 h3{
-	font-family: Lato;
-	font-weight: 300;
-}
-#bloc-5 h3{
-	font-family: Lato;
-	font-weight: 300;
-}
-#bloc-6 h3{
-	font-family: Lato;
-	font-weight: 300;
-}
-#bloc-7 h2{
-	font-family: Lato;
-	font-weight: 300;
-}
-#bloc-8 h3{
-	font-family: Lato;
-	font-weight: 300;
+#bloc-1 h2{
 	font-size: 20px;
-}
-#bloc-10 h3{
-	font-family: Lato;
-	font-weight: 700;
-}
-#bloc-10 p{
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 18px;
 }
 
 /* = NavBar
@@ -339,52 +303,13 @@ nav .caret{
 	margin: 0 5px;
 }
 
-/* = Hero
--------------------------------------------------------------- */
-
-.hero{
-	padding-top:0;
-}
-.hero-nav{
-	position:absolute;
-	margin: 0 auto;
-	top:0;
-	left:0;
-	right:0;
-}
-.v-center{
-	position: relative;
-	height: inherit;
-}
-.v-center .vc-content{
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-}
-.hero .btn-dwn{
-	width: 58px;
-	height: 58px;
-	line-height: 58px;
-	margin: 0 0 0 -29px;
-	padding: 0;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 18px;
-	color: rgba(255,255,255,.8);
-	background: rgba(0,0,0,.6);
-	position: absolute;
-	left: 50%;
-	bottom: 60px;
-	border:0;
-}
-.hero .btn-dwn:hover{
-	color: rgba(255,255,255,1);
-}
-
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -416,14 +341,6 @@ button{
 .btn-rd{
 	border-radius: 40px;
 }
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!important;
-	border:2px solid transparent;
-}
 .a-btn{
 	padding: 6px 10px 6px 0;
 	line-height: 1.42857143;
@@ -438,6 +355,22 @@ button{
 -------------------------------------------------------------- */
 .icon-md{
 	font-size:30px!important;
+}
+.icon-round{
+	margin:0 auto;
+	border:2px solid transparent;
+	border-radius: 50%;
+	padding: 32px 30px 26px 30px;
+	min-width:80px;
+}
+.icon-round,.icon-md,.icon-square.icon-md,.icon-rounded.icon-md{
+	min-width: 92px;
+}
+.icon-round.icon-lg,.icon-square.icon-lg,.icon-rounded.icon-lg{
+	min-width: 122px;
+}
+.icon-round.icon-xl,.icon-square.icon-xl,.icon-rounded.icon-xl{
+	min-width: 162px;
 }
 
 
@@ -461,14 +394,23 @@ button{
 	border-radius:0 0 29px 29px;
 }
 
-
-/* = Forms
+/* = Dividers
 -------------------------------------------------------------- */
-
-.form-control{
-	border-color:rgba(0,0,0,.1);
-	box-shadow:none;
+.divider-h{
+	padding:20px 0;
 }
+.divider-h span{
+	display: block;
+	border-top:1px solid transparent;
+}
+.divider-half{
+	width: 50%;
+	margin: 0 auto;
+}
+.dropdown-menu .divider-h,.dropdown-menu .divider-half{
+	padding:0;
+}
+
 
 /* iFrame */
 
@@ -498,83 +440,6 @@ iframe{
 .no-shadows .carousel-control.left, .no-shadows .carousel-control.right{
 	background-image: none;
 }
-/* = Lightbox
--------------------------------------------------------------- */
-
-a[data-lightbox]{
-	position: relative;
-	display: block;
-	text-align: center;
-}
-a[data-lightbox]:hover::before{
-	content:"+";
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-	font-size:32px;
-	width:50px;
-	height:50px;
-	margin-left:-25px;
-	border-radius: 50%;
-	background:rgba(0,0,0,.6);
-	color:#FFF;
-	font-weight:100;
-	z-index: 1;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
-a[data-lightbox]:hover img{
-	opacity: 0.6;
-	-webkit-animation-fill-mode: none;
-	animation-fill-mode:none;
-}
-#lightbox-modal .modal-dialog{
-	width:90%;
-	max-width:900px;
-	margin:30px auto 0;
-}
-#lightbox-modal .modal-dialog img{
-	margin: 0 auto;
-}
-.lightbox-caption{
-	padding: 20px;
-	color: #FFF;
-	background: rgba(0,0,0,.5);
-	position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 5px;
-}
-.close-lightbox{
-	display: none;
-	font-size: 40px;
-	position: absolute;
-	top:8px;
-	right:20px;
-	z-index: 20;
-}
-.next-lightbox, .prev-lightbox{
-	display: inline-block;
-	width:0;
-	height:0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	transition: all .2s ease-in-out;
-	position: absolute;
-	top:50%;
-}
-.next-lightbox{
-	right:25px;
-	border-left: 20px solid rgba(255,255,255,.4);
-}
-.prev-lightbox{
-	left:25px;
-	border-right:20px solid rgba(255,255,255,.4);
-}
-.prev-lightbox:hover, .next-lightbox:hover{
-	border-right-color:rgba(255,255,255,.9);
-	border-left-color:rgba(255,255,255,.9);
-}
 
 /* = Custom Colour Styling
 -------------------------------------------------------------- */
@@ -584,42 +449,29 @@ a[data-lightbox]:hover img{
 .bgc-white{
 	background-color:#ffffff;
 }
-.bgc-gainsboro{
-	background-color:#DFDFDF;
+.bgc-white-smoke{
+	background-color:#F7F7F7;
 }
-.bgc-outer-space{
-	background-color:#47454B;
-}
-.bgc-dark-coral{
-	background-color:#C5573A;
-}
-/* Text colour styles */
-
-.tc-white{
-	color:#ffffff!important;
-}
-.tc-portland-orange{
-	color:#FA573A!important;
-}
-.tc-taupe-gray{
-	color:#8B8B8B!important;
-}
-.tc-dark-coral{
-	color:#C5573A!important;
+.bgc-sky-blue{
+	background-color:#70D0DF;
 }
 /* Button colour styles */
 
-.btn-portland-orange{
-	background:#FA573A;
-	color:#FFFFFF!important;
+.btn-dandelion{
+	background:#F9DE20;
+	color:rgba(0,0,0,.5)!important;
 }
-.btn-portland-orange:hover{
-	background:#c8462e;
-	color:#FFFFFF!important;
+.btn-dandelion:hover{
+	background:#c7b21a;
+	color:rgba(0,0,0,.5)!important;
 }
-.wire-btn-white{
-	color:#ffffff!important;
-	border-color:#ffffff!important;
+.btn-sky-blue{
+	background:#70D0DF;
+	color:rgba(0,0,0,.5)!important;
+}
+.btn-sky-blue:hover{
+	background:#5aa6b2;
+	color:rgba(0,0,0,.5)!important;
 }
 /* Link colour styles */
 
@@ -632,8 +484,11 @@ a[data-lightbox]:hover img{
 
 /* Bloc image backgrounds */
 
-.bg-lines-dl{
-	background-image:url('img/lines-dl.png');
+.bg-dots-bg{
+	background-image:url("img/dots-bg.png");
+}
+.bg-0330-Ooly{
+	background-image:url("img/0330_Ooly.jpg");
 }
 
 
