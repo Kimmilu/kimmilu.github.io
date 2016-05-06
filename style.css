@@ -201,10 +201,71 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Bloc text custom styling */
 
 #bloc-1 h1{
-	font-size: 42px;
+	font-weight: 400;
+	font-family: Oswald;
+	font-size: 65px;
 }
 #bloc-1 h2{
 	font-size: 20px;
+}
+#bloc-2 h2{
+	font-family: Oswald;
+	line-height: 60px;
+	font-size: 45px;
+}
+#bloc-2 h3{
+	font-weight: 400;
+	font-family: Montserrat;
+	font-size: 24px;
+}
+#bloc-3 h3{
+	font-weight: 300;
+	font-family: Josefin Sans;
+}
+#bloc-4 h2{
+	font-weight: 900;
+	font-family: Oswald;
+}
+#bloc-4 p{
+	font-family: Lato;
+	font-weight: 300;
+	line-height: 24px;
+	font-size: 20px;
+}
+#bloc-5 h2{
+	font-weight: 900;
+	font-family: Oswald;
+}
+#bloc-5 p{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+}
+#bloc-6 h2{
+	font-weight: 900;
+	font-family: Oswald;
+}
+#bloc-6 p{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+}
+#bloc-7 h2{
+	font-weight: 900;
+	font-family: Oswald;
+}
+#bloc-7 h4{
+	font-size: 24px;
+	font-family: Lato;
+	font-weight: 300;
+	line-height: 30px;
+}
+#bloc-8 h2{
+	font-weight: 900;
+	font-family: Oswald;
+	font-size: 45px;
 }
 
 /* = NavBar
@@ -341,6 +402,14 @@ button{
 .btn-rd{
 	border-radius: 40px;
 }
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
 .a-btn{
 	padding: 6px 10px 6px 0;
 	line-height: 1.42857143;
@@ -449,11 +518,22 @@ iframe{
 .bgc-white{
 	background-color:#ffffff;
 }
+.bgc-outer-space{
+	background-color:#47454B;
+}
 .bgc-white-smoke{
 	background-color:#F7F7F7;
 }
 .bgc-sky-blue{
 	background-color:#70D0DF;
+}
+/* Text colour styles */
+
+.tc-white{
+	color:#ffffff!important;
+}
+.tc-black{
+	color:#000000!important;
 }
 /* Button colour styles */
 
@@ -465,13 +545,9 @@ iframe{
 	background:#c7b21a;
 	color:rgba(0,0,0,.5)!important;
 }
-.btn-sky-blue{
-	background:#70D0DF;
-	color:rgba(0,0,0,.5)!important;
-}
-.btn-sky-blue:hover{
-	background:#5aa6b2;
-	color:rgba(0,0,0,.5)!important;
+.wire-btn-sky-blue{
+	color:#70D0DF!important;
+	border-color:#70D0DF!important;
 }
 /* Link colour styles */
 
