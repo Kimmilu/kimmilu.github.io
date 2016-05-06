@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
-/*	    OOLY mattress
+/*	    Ooly2
 /*      Built with Blocs
 /*-----------------------------------------------------------------------------------*/
 
@@ -101,6 +101,13 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	min-width: 100%;
 	min-height: 100%;
 	z-index: 0;
+}
+
+
+/* Background Effects */
+
+.b-parallax{
+	background-attachment:fixed;
 }
 
 
@@ -524,9 +531,6 @@ iframe{
 .bgc-white-smoke{
 	background-color:#F7F7F7;
 }
-.bgc-sky-blue{
-	background-color:#70D0DF;
-}
 /* Text colour styles */
 
 .tc-white{
@@ -545,9 +549,9 @@ iframe{
 	background:#c7b21a;
 	color:rgba(0,0,0,.5)!important;
 }
-.wire-btn-sky-blue{
-	color:#70D0DF!important;
-	border-color:#70D0DF!important;
+.wire-btn-outer-space{
+	color:#47454B!important;
+	border-color:#47454B!important;
 }
 /* Link colour styles */
 
@@ -565,6 +569,9 @@ iframe{
 }
 .bg-0330-Ooly{
 	background-image:url("img/0330_Ooly.jpg");
+}
+.bg-dots-bg{
+	background-image:url('img/dots-bg.png');
 }
 
 
