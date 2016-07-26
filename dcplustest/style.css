@@ -183,7 +183,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-3 p{
 	font-family: Lato;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 24px;
 }
 #bloc-4 h2{
 	font-family: Lato;
@@ -426,6 +426,9 @@ button{
 -------------------------------------------------------------- */
 .lg-shadow{
 	text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.pressed-t{
+	text-shadow:0 1px 0 #FFF;
 }
 
 
@@ -696,8 +699,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-white{
 	color:#ffffff!important;
 }
-.tc-dark-green{
-	color:#042A2B!important;
+.tc-army-green{
+	color:#526000!important;
 }
 /* Button colour styles */
 
