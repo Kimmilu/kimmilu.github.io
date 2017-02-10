@@ -1,0 +1,23 @@
+
+
+/* CUSTOM CSS GOES HERE
+----------------------------------------------------------*/
+
+.icn
+{
+    background-image: url('img/contact01.png');
+}
+
+.yellow_btn
+{
+    background: yellow;
+    width: 20%;
+    font-size: 22px;
+}
+
+.b01_h1
+{
+    color: yellow;
+    font-size: 30px;
+}
+
